@@ -14,6 +14,6 @@ public class App {
 
     /* System.out.println(dot); */
 
-    System.out.println(b.caminharPreOrdem());
+    System.out.println(b.caminharPosOrdem());
   }
 }

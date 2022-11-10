@@ -96,6 +96,17 @@ public class BinarySearchTree{
     }
 
 
+    public List<Integer> caminharPosOrdem() {
+        List<Integer> list = new ArrayList<>();
+        posOrdemRecursivo(list, root);
+        return list;
+    }
+
+    public void posOrdemRecursivo(List<Integer> caminho, Nodo nodo) {
+        if(nodo.left!=null) preOrdemRecursivo(caminho, nodo.left);
+        if(nodo.right!=null) preOrdemRecursivo(caminho, nodo.right);
+        caminho.add(nodo.element);
+    }
 
 
 
