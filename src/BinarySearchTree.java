@@ -77,10 +77,11 @@ public class BinarySearchTree{
     }
     
     // Completar
-    public boolean contains(Integer element)
+    public boolean contains(Integer e)
     {
-        Nodo atual = root;
-        return false;
+            if(root == null) return false;
+            return root.contains(e);
+        
     }
 
     public List<Integer> caminharPreOrdem() {

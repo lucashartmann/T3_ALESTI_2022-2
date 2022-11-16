@@ -14,6 +14,6 @@ public class App {
 
     /* System.out.println(dot); */
 
-    System.out.println(b.caminharPosOrdem());
+    System.out.println(b.contains(21));
   }
 }
